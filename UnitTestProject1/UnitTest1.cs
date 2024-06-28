@@ -1,7 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Unit_T;
-using MathTaskClassLibrary; //(хз, сказано вставить но в итоге не работает)
 
 namespace UnitTestProject1
 {
