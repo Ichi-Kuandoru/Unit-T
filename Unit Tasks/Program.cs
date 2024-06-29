@@ -11,7 +11,7 @@ namespace Unit_Tasks
         public static string GetLatinAlphabetString(int n)
         {
             if (n < 1 || n > 26)
-                throw new ArgumentException("N должно быть от 1 до 26 включительно.");
+                throw new ArgumentException("N must be between 1 and 26 inclusive.");
 
             string result = "";
             for (int i = 0; i < n; i++)
@@ -27,7 +27,7 @@ namespace Unit_Tasks
         public static double[] SolveQuadraticEquation(double a, double b, double c)
         {
             if (a == 0)
-                throw new ArgumentException("число не может быть равно 0 для квадратного уравнения.");
+                throw new ArgumentException("a cannot be 0 for a quadratic equation.");
 
             double discriminant = b * b - 4 * a * c;
             if (discriminant > 0)
@@ -53,7 +53,7 @@ namespace Unit_Tasks
         public static int GetDaysInYear(int year)
         {
             if (year <= 0)
-                throw new ArgumentException("Год должен быть положительным целым числом.");
+                throw new ArgumentException("Year must be a positive integer.");
 
             if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))
                 return 366;
@@ -94,21 +94,22 @@ namespace Unit_Tasks
     {
         static void Main(string[] args)
         {
-            //1. Задача на формирование строки из первых N прописных букв латинского алфавита: 
-            string result = LatinAlphabetString.GetLatinAlphabetString(3);
-            Console.WriteLine("1. Задача: " + result);
-            //2. Задача на решение квадратного уравнения:
-            double[] roots = QuadraticEquationSolver.SolveQuadraticEquation(3, 5, 6);
-            Console.WriteLine("2. Задача: " + roots);
-            //3. Задача на определение количества дней в году:
-            int year = YearDaysCounter.GetDaysInYear(2002);
-            Console.WriteLine("3. Задача: " + year);
-            //4. Задача на проверку email-адреса:
-            bool isValidEmail = EmailValidator.IsValidEmail("test@email");
-            Console.WriteLine("4. Задача: " + isValidEmail);
-            //5. Задача на вычисление суммы цифр в строке:
-            int number = DigitsSummer.SumOfDigits("");
-            Console.WriteLine("5. Задача: " + number);
+            ////1. Задача на формирование строки из первых N прописных букв латинского алфавита: 
+            //string result = LatinAlphabetString.GetLatinAlphabetString(3);
+            //Console.WriteLine(result);
+            ////2. Задача на решение квадратного уравнения:
+            //double[] roots = QuadraticEquationSolver.SolveQuadraticEquation(3, 5, 6);
+            //Console.WriteLine(roots);
+            ////3. Задача на определение количества дней в году:
+            //int year = YearDaysCounter.GetDaysInYear(2002);
+            //Console.WriteLine(year);
+            ////4. Задача на проверку email-адреса:
+            //bool isValidEmail = EmailValidator.IsValidEmail("test@email");
+            //Console.WriteLine(isValidEmail);
+            ////5. Задача на вычисление суммы цифр в строке:
+            //int number = DigitsSummer.SumOfDigits("123");
+            //Console.WriteLine(number);
         }
     }
 }
+    
