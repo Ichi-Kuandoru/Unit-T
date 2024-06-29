@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using Unit_Tasks;
 //using Unit_T;
 
 namespace UnitTestProject1
@@ -46,6 +47,14 @@ namespace UnitTestProject1
     public class QuadraticEquationSolverTests
     {
         [TestMethod]
+        public void SolveQuadraticEquation_()
+        {
+
+
+
+        }
+
+            [TestMethod]
         public void SolveQuadraticEquation_ValidInputWithRealRoots_ReturnsCorrectRoots()
         {
             // Arrange
